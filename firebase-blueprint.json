@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "SavedItem": {
+      "title": "Saved Analysis, Scan or Strategy",
+      "description": "A saved analysis, market scan, prediction, option strategy or code execution result.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "ticker": { "type": "string" },
+        "mode": { "type": "string" },
+        "title": { "type": "string" },
+        "result": { "type": "string", "description": "JSON stringified analysis result" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["userId", "ticker", "mode", "result", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/savedItems/{itemId}": {
+      "schema": { "$ref": "#/entities/SavedItem" },
+      "description": "Saved items and scans for a specific user."
+    }
+  }
+}

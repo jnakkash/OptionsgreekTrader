@@ -1,0 +1,8 @@
+{
+  "name": "OptiGreek Advisor",
+  "description": "An AI-powered options trading assistant that analyzes market conditions, volatility, and the Greeks to recommend optimal strike prices and expiration dates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

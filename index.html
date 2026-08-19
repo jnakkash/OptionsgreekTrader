@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiGreek Advisor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.17.0/dist/tf.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              'terminal-black': '#0a0a0a',
+              'terminal-green': '#00ff41',
+              'terminal-red': '#ff0033',
+              'terminal-gray': '#1e1e1e',
+              'terminal-accent': '#00b8ff',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #07080c;
+        color: #e2e8f0;
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #090a0f; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #222736; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00b8ff; 
+      }
+    </style>
+  </head>
+  <body class="bg-[#07080c] text-gray-100 min-h-screen selection:bg-terminal-accent/30 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "optigreek-advisor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.13.0",
+    "@tensorflow/tfjs": "^4.22.0",
+    "d3": "^7.9.0",
+    "firebase": "^12.16.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "lucide-react": "0.344.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recharts": "2.12.2"
+  },
+  "devDependencies": {
+    "@firebase/eslint-plugin-security-rules": "^0.0.2",
+    "@types/d3": "^7.4.3",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^10.8.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
