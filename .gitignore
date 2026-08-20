@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.user
+*.sln
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Playwright test artifacts
+.playwright-mcp/
+test-*.png
+
+# Loose screenshots from dev
+*.png
+
+# Serena MCP project data
+.serena/
+
+# Lock files (keep package-lock.json, ignore bun)
+bun.lock
+
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
